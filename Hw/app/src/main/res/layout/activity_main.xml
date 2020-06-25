@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Grade calculator"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/grade"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:fontFamily="@font/electrolize"
+        android:hint="Quizes %15 :"
+        android:inputType="textPersonName"
+        android:shadowColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/hW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/quiz"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:fontFamily="@font/electrolize"
+        android:hint="HomeWork %25 :"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hW"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:fontFamily="@font/electrolize"
+        android:hint="Mid terms %30 :"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/finals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mid"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:fontFamily="@font/electrolize"
+        android:hint="Finals %30:"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/result"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/calculate"
+        android:fontFamily="@font/amaranth"
+        android:text="calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/finals"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/result"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:textColor="#DFDCDC"
+        android:textColorHint="#304860"
+        android:textSize="27sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="Reset"
+        android:onClick="reset"
+        android:layout_alignTop="@+id/result"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="335dp"
+        android:background="@drawable/reset_button"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/Quiz"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/grade"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:gravity="center"
+        android:background="@drawable/checks"
+        android:fontFamily="@font/electrolize"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/HW"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/Quiz"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/checks"
+        android:ems="10"
+        android:gravity="center"
+        android:fontFamily="@font/electrolize"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/Mid"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/HW"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:background="@drawable/checks"
+        android:fontFamily="@font/electrolize"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/Final"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/Mid"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:fontFamily="@font/electrolize"
+        android:inputType="number"
+        android:background="@drawable/checks"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>
